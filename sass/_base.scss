@@ -46,3 +46,15 @@ body {
     font-weight: 400;
     line-height: 2.8rem;
 }
+
+a:link, a:visited {
+    color: #2a898e;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1A535C;
+    background-color: transparent;
+    text-decoration: none;
+}
