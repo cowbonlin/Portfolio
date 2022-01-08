@@ -46,6 +46,11 @@
     line-height: 6.4rem;
     font-weight: 700;
     
+    @include respond(phone) {
+        font-size: 3rem;
+        line-height: 4.2rem;
+    }
+    
     span {
         display: block;
         font-weight: inherit;
@@ -67,8 +72,14 @@
     &__skill-set {
         margin-top: 1.6rem;
         display: flex;
+        flex-wrap: wrap;
+        gap: .6rem;
         align-items: center;
         color: var(--color-black);
+        
+        @include respond(phone) {
+            margin-top: 2.4rem;
+        }
     }
     
     &__skill-text {
@@ -76,6 +87,10 @@
         line-height: 2.4rem;
         color: var(--color-grey);
         margin-right: 2.4rem;
+        
+        @include respond(tab-port) {
+            margin-right: 1.6rem;
+        }
     }
     
     &__skill-item {
@@ -90,21 +105,27 @@
         background-color: var(--color-grey-3);
         border-radius: 2rem;
         padding: 4px;
-        
-        &:not(:last-child) {
-            margin-right: .8rem;
-        }
     }
 }
 
 .project-heading {
     font-size: 2.4rem;
+    
+    @include respond(tab-port) {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
 }
 
 .project-list {
     padding-top: 2.4rem;
     display: flex;
     flex-wrap: wrap;
+    gap: 2rem;
+    
+    @include respond(tab-port) {
+        justify-content: center;
+    }
 }
 
 .project {
@@ -113,15 +134,10 @@
     
     max-width: 45rem;
     min-width: 21.7rem;
-    height: 50rem;
+    padding-bottom: 1rem;
     border-radius: 4px;
     box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .1);
     text-decoration: none;
-    margin-bottom: 1.6rem;
-    
-    &:not(:last-child) {
-        margin-right: 2rem;
-    }
     
     &__skills {
         list-style-type: none;
@@ -178,16 +194,30 @@
     border-radius: 1.5rem;
     margin-top: 6rem;
     margin-bottom: 3rem;
+    
+    @include respond(phone) {
+        width: 100%;
+        margin-top: 1rem;
+    }
 }
 
 .about {
     margin-bottom: 8rem;
+    margin-top: 16rem;
+    
+    @include respond(phone) {
+        margin-top: 10rem;
+    }
     
     &__paragraph {
         font-size: 1.7rem;
         line-height: 3rem;
         width: 75%;
         margin: 0 auto;
+        
+        @include respond(phone) {
+            width: 100%;
+        }
         
         &:not(:last-child) {
             margin-bottom: 1.7rem;

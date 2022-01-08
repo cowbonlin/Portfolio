@@ -2,19 +2,36 @@
     max-width: 96rem;
     margin: 0 auto;
     background-color: #fff;
+    
+    @include respond(tab-port) {
+        padding: 0 2rem;
+    }
 }
 
 .header {
     padding: 2rem 0 1.6rem;
-    height: 10rem;
+    height: 8rem;
     
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    position: fixed;
+    top: -1px;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: hsla(0, 0%, 100%, .6);
+    -webkit-backdrop-filter: saturate(180%) blur(2rem);
+    backdrop-filter: saturate(180%) blur(2rem);
 }
 
 .section-intro {
-    margin-top: 10rem;
+    margin-top: 18rem;
+    
+    @include respond(phone) {
+        margin-top: 10rem;
+    }
 }
 
 .section-projects {
