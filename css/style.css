@@ -153,7 +153,8 @@ a:hover {
     padding: 0px 5px;
     border-radius: 3px; }
   .project__image {
-    transition: opacity .2s; }
+    transition: opacity .2s;
+    width: 100%; }
     .project__image:hover {
       opacity: .8; }
   .project__text {

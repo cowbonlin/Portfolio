@@ -157,6 +157,7 @@
     
     &__image {
         transition: opacity .2s;
+        width: 100%;
         
         &:hover {
             opacity: .8;
