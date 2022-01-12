@@ -9,13 +9,17 @@ const links = [
     { name: 'About', path: '/about' },
 ]
 
-const Layout = ({ children }): JSX.Element => {
+type LayoutProps = {
+  children: JSX.Element | JSX.Element[] | string
+}
+
+const Layout = ({ children }: LayoutProps): JSX.Element => {
     const router = useRouter()
     const pathName = router.pathname.split('/[')[0]
     return (
         <div className={styles.container}>
             <Head>
-                <meta charset="UTF-8" />
+                <meta charSet="UTF-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
             </Head>

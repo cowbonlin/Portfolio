@@ -3,7 +3,7 @@ import styles from './project.module.scss'
 
 type ProjectProps = {
     title: string,
-    skills: array,
+    skills: Array<string>,
     url: string,
     img: any,
     imgAlt: string,
