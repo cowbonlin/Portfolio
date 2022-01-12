@@ -1,0 +1,65 @@
+@import "styles/colors.module";
+@import "styles/respond.module";
+
+.project {
+    display: flex;
+    flex-direction: column;
+    
+    max-width: 45rem;
+    min-width: 21.7rem;
+    padding-bottom: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .1);
+    text-decoration: none;
+    
+    &__skills {
+        list-style-type: none;
+        color: $color-black;
+        margin: 5px 0px;
+    }
+    
+    &__skillItem {
+        display: inline-block;
+        background-color: #2a898e;
+        color: $color-white;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        padding: 0px 5px;
+        border-radius: 3px;
+        &:not(:last-child) {
+            margin-right: 3px;
+        }
+    }
+    
+    &__image {
+        transition: opacity .2s;
+        width: 100%;
+        
+        &:hover {
+            opacity: .8;
+        }
+    }
+    
+    &__text {
+        padding: 1.6rem 2rem;
+    }
+    
+    &__title {
+        color: $color-black;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        font-weight: 700;
+        margin-bottom: 8px;
+        transition: opacity .2s;
+        
+        &:hover {
+            opacity: .8;
+        }
+    }
+    
+    &__description {
+        color: #999;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+    }
+}

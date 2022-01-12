@@ -1,0 +1,46 @@
+@import "styles/colors.module";
+@import "styles/respond.module";
+
+.sectionAbout {
+    margin-bottom: 8rem;
+    margin-top: 16rem;
+    padding: 0 11.5rem;
+    
+    @include respond(phone) {
+        margin-top: 10rem;
+        padding: 0;
+    }
+}
+
+.about {
+    &__imageWrapper {
+        margin-bottom: 2rem;
+    }
+    
+    &__image {
+        display: block;
+        margin: 0 auto;
+        border-radius: 1.5rem;
+        margin-top: 6rem;
+        
+        
+        @include respond(phone) {
+            width: 100%;
+            margin-top: 1rem;
+        }
+    }
+    
+    &__paragraph {
+        font-size: 1.7rem;
+        line-height: 3rem;
+        margin: 0 auto;
+        
+        @include respond(phone) {
+            width: 100%;
+        }
+        
+        &:not(:last-child) {
+            margin-bottom: 1.7rem;
+        }
+    }
+}
