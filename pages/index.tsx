@@ -8,6 +8,7 @@ import styles from 'styles/Home.module.scss'
 
 import eyebusImg from 'public/Eyebus.jpeg'
 import robotxImg from 'public/Robotx.jpeg'
+import portfolioImg from 'public/Portfolio.jpeg'
 
 const projectList = [
     {
@@ -24,6 +25,13 @@ const projectList = [
         img: robotxImg,
         imgAlt: 'Robotx',
         description: 'Robotx aimed to build an intelligent system for unmanned surface vehicles. I developed the backend system responsible for receiving sensor data from vehicles, as well as providing APIs for admins.'
+    }, {
+        title: 'Portfolio Website',
+        skills: ['Next.js', 'SCSS', 'Typescript', 'RWD', 'Vercel'],
+        url: 'https://www.cowbon.info',
+        img: portfolioImg,
+        imgAlt: 'Portfolio',
+        description: 'The website is designed by myself and implemented using Next.js and SCSS. The website is still under development and more features will be added soon!'
     }
 ]
 
@@ -48,10 +56,17 @@ const Home: NextPage = () => (
                     <div className={styles.intro__skillText}>Skills:</div>
                     <div className={styles.intro__skillTag}>Full Stack</div>
                     <div className={styles.intro__skillTag}>Python</div>
+                    <div className={styles.intro__skillTag}>Javascript</div>
+                    <div className={styles.intro__skillTag}>Flask</div>
                     <div className={styles.intro__skillTag}>React.js</div>
+                    <div className={styles.intro__skillTag}>SCSS</div>
                     <div className={styles.intro__skillTag}>MySQL</div>
-                    <div className={styles.intro__skillTag}>AWS</div>
+                    <div className={styles.intro__skillTag}>SQLAlchemy</div>
+                    <div className={styles.intro__skillTag}>Nginx</div>
                     <div className={styles.intro__skillTag}>Docker</div>
+                    <div className={styles.intro__skillTag}>AWS</div>
+                    <div className={styles.intro__skillTag}>DevOps</div>
+                    <div className={styles.intro__skillTag}>Socket Programming</div>
                 </div>
             </div>
         </section>

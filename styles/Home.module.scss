@@ -29,7 +29,7 @@
 }
 
 .intro {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     line-height: 2.4rem;
     
     &__text {
@@ -63,7 +63,7 @@
     }
     
     &__skillTag {
-        width: 9rem;
+        min-width: 9rem;
         
         font-size: 1.2rem;
         line-height: 1.8rem;
@@ -73,7 +73,7 @@
         color: $color-grey-2;
         background-color: $color-grey-3;
         border-radius: 2rem;
-        padding: 4px;
+        padding: 4px 12px;
     }
 }
 
