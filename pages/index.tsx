@@ -42,7 +42,7 @@ const Home: NextPage = () => (
                     I love being a software engineer. Tackling complex problems and building amazing products are fun. But what I want is more: I want to help people become better ones and focus on what matters to them.
                 </p>
                 <p className={styles.intro__text}>
-                    I am a full-stack engineer from Taiwan 🇹🇼 , and currently pursuing my CS master's degree at USC.
+                    I am a full-stack engineer from Taiwan 🇹🇼 , and currently pursuing my CS master's degree at USC. I will be joining OpenDoor as a software engineer intern for Summer 2022 and, together, revolutionizing the real estate industry!
                 </p>
                 <div className={styles.intro__skillSet}>
                     <div className={styles.intro__skillText}>Skills:</div>
